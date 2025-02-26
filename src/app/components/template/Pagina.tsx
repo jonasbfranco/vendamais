@@ -1,6 +1,7 @@
+import { ReactNode } from "react";
 
 export interface PaginaProps {
-    children: any;
+    children: ReactNode;
     className?: string;
 }
 
