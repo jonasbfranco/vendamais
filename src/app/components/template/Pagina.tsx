@@ -1,7 +1,7 @@
 
 export interface PaginaProps {
-    children: any
-    className?: string
+    children: any;
+    className?: string;
 }
 
 export default function Pagina(props: PaginaProps) {

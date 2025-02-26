@@ -1,5 +1,7 @@
+import Pagina from "./components/template/Pagina";
+
 export default function Home() {
   return (
-    <div>Opa</div>
+    <Pagina>Pagina Inicial</Pagina>
   );
 }
