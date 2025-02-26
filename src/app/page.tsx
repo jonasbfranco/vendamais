@@ -2,6 +2,6 @@ import Pagina from "./components/template/Pagina";
 
 export default function Home() {
   return (
-    <Pagina>Pagina Inicial Teste</Pagina>
+    <Pagina>Pagina Inicial - Dashboard</Pagina>
   );
 }
