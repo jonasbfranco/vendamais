@@ -1,5 +1,5 @@
 import {
-    IconHome,
+    IconChartHistogram,
     IconLogout,
     IconShoppingCart,
     IconUsers,
@@ -13,21 +13,21 @@ export default function Menu() {
             <nav className="flex flex-col pt-10  h-screen justify-between">
                 
                     <div>
-                        <MenuItem icone={IconHome} url="/" texto="Início" />
+                        <MenuItem icone={IconChartHistogram} url="/" texto="Dashboard" />
                         <MenuItem
                             icone={IconUsers}
                             url="/clientes"
-                            texto="Cadastro de Cliente"
-                        />
-                        <MenuItem
-                            icone={IconWallet}
-                            url="/entradas"
-                            texto="Cadastro de Entradas"
+                            texto="Cadastro de Clientes"
                         />
                         <MenuItem
                             icone={IconShoppingCart}
-                            url="/saidas"
-                            texto="Cadastro de Saídas"
+                            url="/vendas"
+                            texto="Cadastro de Vendas"
+                        />
+                        <MenuItem
+                            icone={IconWallet}
+                            url="/parcelas"
+                            texto="Cadastro de Parcelas"
                         />
                     </div>
                     <div className="mb-6">

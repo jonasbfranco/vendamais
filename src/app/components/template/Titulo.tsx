@@ -7,10 +7,11 @@ export interface TituloProps {
 }
 export default function Titulo(props: TituloProps) {
     return (
-        <div>
-            <div>
-                <h1>...</h1>
-                <h2>...</h2>
+        <div className="flex gap-2">
+            < props.icone size={55} stroke={1} />
+            <div className="flex flex-col">
+                <h1 className="text-2xl font-black">{props.principal}</h1>
+                <h2 className="text-zinc-400">{props.secundario}</h2>
             </div>
         </div>
     )
