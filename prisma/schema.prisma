@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+// Database Local
+/**
+ * datasource db {
+ * provider = "sqlite"
+ * url      = env("DATABASE_URL")
+ * }
+ */
+
+
+// Database Vercel
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model Cliente {
+  id       String  @id @default(cuid())
+  nome     String
+  whatsapp String  @unique
+  cidade   String?
+}
